@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Delete Project</title>
+</head>
+<body>
+    <h1>Confirm Delete Project "{{ project.title }}"</h1>
+    <form method="post">
+        {% csrf_token %}
+        <p>Are you sure you want to delete this project?</p>
+        <button type="submit">Delete</button>
+    </form>
+</body>
+</html>
